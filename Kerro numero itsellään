@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>laskeNeliö()</title>
+</head>
+<body>
+
+    <input type="number" id="input">
+    <button onclick="laskeNeliö()">Kerro luku itsellään</button><br/><br/>
+    <div id="kohde"></div>
+    
+<script>
+
+    function laskeNeliö() {
+    
+    var luku = document.getElementById("input").value;
+
+    luku = luku * luku;
+
+    document.getElementById("kohde").innerHTML = luku;
+   
+}
+</script>
+
+</body>
+</html>
