@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Postinumeron tarkistus</title>
+</head>
+<body>
+
+    <input id="postinumero">
+    <button onclick="tarkastaNumero()">Tarkasta postinumero</button><br><br>
+    <p id="output"></p>
+
+<script>
+    var numero;
+    var koko;
+
+function tarkastaNumero(){
+
+numero = document.getElementById("postinumero").value;
+koko = numero.length;
+var arvo = "";
+
+    if(koko == 5){
+        arvo = "true";
+    }
+
+    else {
+        arvo = "false";
+    }
+
+document.getElementById("output").innerHTML = arvo;
+}
+
+    </script>
+</body>
+</html>
